@@ -223,43 +223,23 @@ if __name__ == "__main__":
         message_id="test-001",
     )
 
-    result = classify_email(test_email)
-def run_email_pipeline(email: Email):
-    """
-    Run the complete DevSynt Task 6 email triage pipeline.
-    """
+    result = run_email_pipeline(test_email)
 
-    # 1. Clean and process the email
-    processed = process_email(
-        email.subject,
-        email.body
-    )
-
-    # 2. AI/rule-based classification
-    classification = ai_classify_email(
-        email.sender,
-        processed["subject"],
-        processed["body"]
-    )
-
-    # 3. Decide the operational action
-    decision = decide_action(
-        classification
-    )
-
-    # 4. Retrieve relevant knowledge-base context
-    rag_result = run_rag(
-        processed["text"]
-    )
-
-    return {
-        "email": processed,
-        "classification": classification,
-        "decision": decision,
-        "rag": rag_result,
-    }
     print("=== DevSynt Email Triage ===")
-    print(f"Category: {result.category}")
-    print(f"Priority: {result.priority}")
-    print(f"Requires Human: {result.requires_human}")
-    print(f"Action: {result.action}")
+
+    print("\n--- Processed Email ---")
+    print(result["email"])
+
+    print("\n--- Classification ---")
+    print(result["classification"])
+
+    print("\n--- Decision ---")
+    print(result["decision"])
+
+    print("\n--- RAG Result ---")
+    print(result["rag"])
+      print("\n--- Decision ---")
+    print(result["decision"])
+
+    print("\n--- RAG Result ---")
+    print(result["rag"])
