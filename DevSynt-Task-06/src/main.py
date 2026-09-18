@@ -6,6 +6,10 @@ Basic email classification and routing engine.
 from dataclasses import dataclass
 from typing import Optional
 
+from email_processor import process_email
+from classifier import classify_email as ai_classify_email
+from decision_engine import decide_action
+from rag import run_rag
 
 @dataclass
 class Email:
