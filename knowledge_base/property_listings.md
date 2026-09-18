@@ -1,119 +1,251 @@
-# Real Estate Knowledge Base — Property Listings
+# Property Listings
 
-## Important Notice
+This document contains property-listing information available from the Task 5 company research and publicly accessible company listing pages.
 
-Property listings, prices, availability and property details are dynamic and may change.
+Property information is dynamic and can change.
 
-The AI assistant must NOT guarantee that a property is still available based only on this knowledge base.
+The AI must treat listing information as time-sensitive and must not guarantee availability unless current data confirms it.
 
-If an email asks for a current listing, exact availability, updated price or viewing appointment and the information is not clearly available, route the request to a human.
+---
 
-## Found Realty Houston — Example Listings
+## 1. Found Realty Houston
 
-The Found Realty Houston website currently displays listings in the Houston and surrounding Texas markets.
+**Website:** Found Realty Houston
 
-Examples found on the website include:
+The website displays featured residential listings in the Houston, Texas area.
 
-1. 1807 Stacy Crest, Houston, TX 77008
-   - Price shown on the website: approximately $384,000 in one featured-listing snapshot
-   - 3 bedrooms
-   - 4 bathrooms
-   - 2,690 sq ft
-   - Listed by eXp Realty LLC
+Examples of listings visible during research include:
 
-2. 3621 Yupon ST, Houston, TX 77006
-   - Price shown: approximately $4,100
-   - 2 bedrooms
-   - 3 bathrooms
-   - 1,837 sq ft
-   - Listed by eXp Realty LLC
+### 1807 Stacy Crest, Houston, TX 77008
 
-3. 4720 Polk ST, Houston, TX 77023
-   - Price shown: approximately $499,000
-   - 2 bedrooms
-   - 1 bathroom
-   - 3,628 sq ft
-   - Listed by eXp Realty LLC
+- Price: $384,000
+- Bedrooms: 3
+- Bathrooms: 4
+- Size: 2,690 sq ft
+- Listed by: eXp Realty LLC
 
-4. 519 Glenwood Ridge DR, Spring, TX 77386
-   - Price shown: approximately $290,000
-   - 3 bedrooms
-   - 2 bathrooms
-   - 1,818 sq ft
-   - Listed by eXp Realty LLC
+### 3621 Yupon St, Houston, TX 77006
 
-5. 12155 Auburn Hills DR, Tomball, TX 77377
-   - Price shown: approximately $399,000
-   - 5 bedrooms
-   - 3 bathrooms
-   - 2,928 sq ft
-   - Listed by eXp Realty LLC
+- Price: $4,100
+- Bedrooms: 2
+- Bathrooms: 3
+- Size: 1,837 sq ft
+- Listed by: eXp Realty LLC
 
-6. 0 Ives Creek RD, Bellville, TX 77418
-   - Price shown: approximately $150,000
-   - 5.73 acres
+### 4720 Polk St, Houston, TX 77023
 
-## McLay Real Estate — Example Listings
+- Price: $499,000
+- Bedrooms: 2
+- Bathrooms: 1
+- Size: 3,628 sq ft
+- Listed by: eXp Realty LLC
 
-The McLay Real Estate website features properties in Toronto and surrounding Ontario markets.
+### 519 Glenwood Ridge Dr, Spring, TX 77386
 
-Examples displayed on the website include:
+- Price: $290,000
+- Bedrooms: 3
+- Bathrooms: 2
+- Size: 1,818 sq ft
+- Listed by: eXp Realty LLC
 
-1. 57 Westwood Avenue, Toronto
-   - Price shown: approximately $3,535,723
+### 12155 Auburn Hills Dr, Tomball, TX 77377
 
-2. 462 Northcliffe Boulevard, Toronto
-   - Price shown: approximately $2,667,078
+- Price: $399,000
+- Bedrooms: 5
+- Bathrooms: 3
+- Size: 2,928 sq ft
+- Listed by: eXp Realty LLC
 
-3. 59 Cynthia Road, Toronto
-   - 4+1 bedrooms
-   - 5 bathrooms
-   - Price shown: approximately $2,500,000
+### 0 Ives Creek Rd, Bellville, TX 77418
 
-4. 35 Annsleywood Court, Vaughan
-   - 4+1 bedrooms
-   - 5 bathrooms
-   - Price shown: approximately $2,299,000
+- Price: $150,000
+- Land size: 5.73 acres
+- Listed by: eXp Realty LLC
 
-5. 286194 County Road, Mono
-   - 4 bedrooms
-   - 3 bathrooms
-   - Price shown: approximately $1,460,000
+**Important:** These are examples from the listing page and should not be treated as permanently available properties.
 
-## McLay Pre-Construction
+---
 
-The McLay website also displays pre-construction projects, including:
+# 2. McLay Real Estate
 
-- Brooklin Towns
-- 1000 Bay
-- 101 Erskine Condo
-- 109OZ
-- 129 St. Clair
-- 133 Hazelton
-- 150 Fairview Mall
-- 150 Redpath Condos
+**Website:** McLay Real Estate
 
-## REAL New York
+McLay provides a property-search system covering Toronto and surrounding areas.
 
-REAL New York provides rental and property listings in New York.
+The website includes:
 
-Individual listings can include rental fees, application fees, security deposits, property details and contact information.
+- Residential properties
+- Detached homes
+- Condos
+- Townhouses
+- Pre-construction properties
+- Commercial/business listings
+- Sale and rental search options
 
-The AI assistant should use the current listing page or human escalation when a customer asks about exact availability.
+### Featured Listings Observed During Research
 
-## Stanfles Realty
+#### 57 Westwood Avenue, Toronto
 
-Stanfles Realty's public website displays recently sold properties, including examples such as:
+- Price displayed: $3,535,723
 
-- 1745 Orlando — approximately $5.45M
-- 19070 Maple Leaf — approximately $3.38M
+#### 462 Northcliffe Boulevard, Toronto
 
-These are examples of recently sold properties and should NOT be presented as currently available listings.
+- Price displayed: $2,667,078
 
-## Listing Safety Rule
+#### 59 Cynthia Road, Toronto
 
-Never invent a property, price, availability status, address, number of bedrooms or other listing information.
+- Bedrooms: 4+1
+- Bathrooms: 5
+- Price displayed: $2,500,000
 
-If the requested property cannot be found in the knowledge base, respond with a safe escalation such as:
+#### 35 Annsleywood Court, Vaughan
 
-"Thanks for your inquiry. I don't have verified current information for that property in my knowledge base. I've routed your request to our team for confirmation."
+- Bedrooms: 4+1
+- Bathrooms: 5
+- Price displayed: $2,299,000
+
+#### 286194 County Road, Mono
+
+- Bedrooms: 4
+- Bathrooms: 3
+- Price displayed: $1,460,000
+
+**Important:** Listing prices and availability may change.
+
+---
+
+# 3. Zown
+
+**Website:** Zown
+
+Zown provides property search across Ontario.
+
+Its listing platform includes:
+
+- Homes
+- Condos
+- Townhouses
+- Detached homes
+- Semi-detached homes
+- Freehold townhouses
+- Multi-family properties
+- New listings
+
+Each listing may include:
+
+- Property address
+- Price
+- Bedrooms
+- Bathrooms
+- Property type
+- Estimated Zown Down Payment Boost where applicable
+
+### Example Listing
+
+#### 509-165 Ontario Street, Kingston, Ontario
+
+- Price displayed: $639,900
+- Bedrooms: 2
+- Bathrooms: 1
+- Property type: Condo apartment
+- Parking: 1 garage space
+- Annual property tax displayed: $5,167
+- Condo fees displayed: $1,200/month
+
+**Important:** This listing information is time-sensitive.
+
+---
+
+# 4. REAL New York
+
+REAL New York provides residential rental and sales listings in New York City.
+
+The website provides access to:
+
+- Rental apartments
+- No-fee apartments
+- Condo properties
+- Co-op properties
+- Residential sales
+- Commercial properties
+- New developments
+
+Property availability, rental prices, and fees can change.
+
+The AI should not state that a specific property is available unless current listing information confirms it.
+
+---
+
+# 5. Stanfles Realty
+
+Stanfles Realty provides real estate brokerage services in Los Angeles and Orange County.
+
+The available company information confirms brokerage services and agent support.
+
+Specific property listings should be retrieved from the current listing source before confirming:
+
+- Address
+- Price
+- Availability
+- Property type
+- Bedrooms
+- Bathrooms
+
+The AI must not invent listing details.
+
+---
+
+# 6. Partner Real Estate
+
+Partner Real Estate provides property and real estate services in California.
+
+Specific listings can change over time.
+
+The AI should only provide property details when they are available in the current listing information.
+
+---
+
+# 7. Bizzarro Real Estate Agency
+
+Bizzarro provides residential real estate services in New York City and Westchester.
+
+The company website includes property-related services and a property/agent search experience.
+
+The AI should not invent a property address, price, or availability status.
+
+---
+
+# 8. Other Companies
+
+The following companies are included in the company dataset but should not be treated as property-listing sources unless a specific listing is documented:
+
+- INFINI Marketing
+- The Skyline Agency
+- Neon Ambition
+- H Street Digital
+- Fahrenheit Marketing
+- UGC Factory
+- HMG Creative
+- Blackhawk
+- Weather Makers NYC
+- California Air Conditioning Systems
+- Rescue Air and Plumbing
+- NEXGEN Air & Plumbing
+- ELITE Construction
+
+These companies provide marketing, creative, HVAC, plumbing, construction, or related services rather than serving as the primary property-listing source in this knowledge base.
+
+---
+
+# Property Listing Safety Rules
+
+1. Never invent a property.
+2. Never invent a property price.
+3. Never invent availability.
+4. Never assume an old listing is still active.
+5. Do not provide an estimated price unless explicitly requested and clearly labeled as an estimate from an authorized source.
+6. When a customer asks for current availability, verify current information before confirming.
+7. If current listing information is unavailable, route the request to a human.
+8. Preserve the property address and customer context when handling follow-up emails.
+9. Use the most recent available listing information.
+10. Do not treat a sample listing as proof that the property is still available.
