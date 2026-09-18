@@ -1,87 +1,299 @@
-# Real Estate Knowledge Base — Policies & Safety Rules
+# Policies
 
-## AI Knowledge Policy
+This document contains documented business policies and operational rules relevant to the Task 06 AI Email Triage & RAG Assistant.
 
-The AI assistant must only provide information supported by the knowledge base.
+The AI must follow these policies when processing customer emails.
 
-The AI must NOT:
+---
 
-- Invent property listings.
+## 1. Knowledge Accuracy Policy
+
+The AI must only provide information supported by the knowledge base.
+
+The AI must not:
+
+- Invent company information.
+- Invent property information.
 - Invent prices.
-- Invent commissions.
-- Invent company policies.
-- Guarantee property availability.
-- Make legal or financial decisions.
-- Make hiring decisions.
-- Schedule meetings without human confirmation.
-- Provide unsupported answers when information is missing.
+- Invent fees.
+- Invent availability.
+- Invent employees or contact details.
+- Invent policies.
+- Guess when information is missing.
 
-## Human Escalation Policy
+When information is unavailable, the AI should provide a safe response and route the email for human review when appropriate.
 
-A request must be routed to a human when:
+---
 
-- Required information is not available.
-- The question involves an exact fee that is not documented.
-- The customer asks for current availability that cannot be verified.
-- The request involves a complaint.
-- The request involves an important project/client decision.
+## 2. Property Information Policy
+
+Property information can change frequently.
+
+The AI should only provide:
+
+- Property address
+- Property price
+- Property type
+- Bedrooms
+- Bathrooms
+- Property features
+- Listing status
+
+when that information is available in the current property listing data.
+
+The AI should not assume that an older listing is still available.
+
+If the customer asks whether a property is currently available and current information cannot confirm this, route the request to the relevant human representative.
+
+---
+
+## 3. Pricing and Fee Policy
+
+The AI may provide a fee or price only when it is explicitly documented.
+
+Examples of documented information include:
+
+- Stanfles Realty's published transaction fees.
+- Partner Real Estate's published transaction coordination fees.
+- Zown's published seller commission.
+- REAL New York's published rental and seller fee information.
+
+If a fee is not documented, the AI should not estimate it.
+
+---
+
+## 4. Stanfles Realty Policy
+
+Stanfles Realty publishes:
+
+- $594 per file for transactions under $1 million.
+- 0.1% per file above $1 million.
+- E&O included in all files.
+- No monthly fees.
+- No franchise fees.
+- No desk fees.
+- No technology fees.
+- Annual $99 E&O if inactive.
+- Basic Transaction Coordination is free.
+- Full Service Transaction Coordination is competitively priced.
+- Remote Online Notary services are available.
+
+The AI should use these published details only when responding to questions about Stanfles.
+
+---
+
+## 5. Partner Real Estate Policy
+
+Partner Real Estate publishes:
+
+### Partner Team Agents
+
+Transaction Coordinator support is included at no additional cost.
+
+### National Network Partner Program
+
+Transaction coordination is listed at $500 per closing, paid at close of escrow.
+
+The service states that there are no monthly or annual fees.
+
+The AI should not apply the $500 fee to every Partner Real Estate customer. It applies to the stated National Network Partner Program.
+
+---
+
+## 6. Zown Policy
+
+Zown publishes full-service home selling at:
+
+- 1% commission
+- Capped at $7,999
+
+Zown states that sellers are not required to sell their home with Zown after consultation.
+
+The AI should not state that a customer is obligated to use Zown unless a current documented policy specifically says so.
+
+---
+
+## 7. REAL New York Policy
+
+REAL New York's published information includes:
+
+- Website information is available without charge.
+- Apartment viewing through its brokers is not charged separately.
+- Broker fees apply when a client rents through REAL New York unless the property is no-fee.
+- Unfurnished apartments with a 1–2 year lease usually have a broker fee of 15% of annual rent.
+- Furnished and short-term rental fees may use different pricing.
+
+Seller costs are also documented separately and may vary according to the property and transaction.
+
+The AI must not treat any fee as universal when the source states that fees can vary.
+
+---
+
+## 8. Bizzarro Real Estate Policy
+
+Bizzarro provides services for buyers, sellers, investors, and property-management needs.
+
+The company offers different seller options including:
+
+- Traditional open-market sale.
+- Home evaluation.
+- Instant cash offers.
+
+The AI should not claim a specific commission or fee unless the amount is documented in the knowledge base.
+
+---
+
+## 9. General Human Review Policy
+
+The AI must route an email for human review when:
+
+- Required information is missing.
+- The answer cannot be grounded in the knowledge base.
+- The customer asks for a decision requiring professional judgment.
 - The request involves sensitive information.
+- The request concerns a legal or financial decision.
+- Property availability cannot be confirmed.
+- A customer disputes a fee or transaction.
 - The AI confidence is low.
-- A meeting or appointment requires confirmation.
-- The email is urgent or critical.
+- The email concerns an important project or business decision.
 
-## Listing Information Policy
+---
 
-Property listings are dynamic.
+## 10. Urgent Issue Policy
 
-Prices, availability, property status and property details may change.
+Urgent or critical customer issues must be routed immediately to a responsible human.
 
-The AI should treat listing information in this knowledge base as reference information and should request human confirmation when the customer needs current availability or a transaction decision.
+The AI should not delay urgent issues by attempting to provide a complete automated answer.
 
-## REAL New York Listing Notice
+A high-priority notification should be generated according to the Task 06 workflow.
 
-REAL New York property pages state that listings are provided for informational purposes and may include restrictions. The website also states that users should not copy, modify, repost or advertise listings without written authorization from the owner.
+---
 
-## Rental Fee Policy
+## 11. Job Application Policy
 
-REAL New York states that clients pay a broker fee when renting through REAL New York, except when the property is designated as a NO FEE apartment.
+Job applications should be forwarded to the appropriate HR contact and Discord channel.
 
-Specific rental and property fees may vary and should be confirmed when necessary.
+The AI must not:
 
-## Zown Policy Information
+- Make hiring decisions.
+- Reject candidates automatically.
+- Promise employment.
+- Evaluate a candidate as hired or rejected.
 
-Zown's public FAQ states that customers are not required to sell their home with Zown after consultation.
+The AI's role is routing and information handling.
 
-Zown also advertises a full-service selling model with a 1% commission capped at $7,999.
+---
 
-## Stanfles Fee Policy
+## 12. Project/Internal Email Policy
 
-Stanfles states that there are no monthly fees, franchise fees, desk fees or technology fees under its stated brokerage model.
+Project-related or important internal emails should be routed to the responsible manager.
 
-Its public FAQ also describes transaction-based fees and an inactive-agent E&O fee.
+A Discord notification should also be generated according to the Task 06 workflow.
 
-## Partner Real Estate Transaction Policy
+The AI should not make important business decisions on behalf of the manager.
 
-Partner Real Estate states that transaction coordination is included for its team agents.
+---
 
-Its National Network Partner Program page states a $500-per-closing transaction coordination fee for the specified partner program.
+## 13. Meeting Request Policy
 
-## Privacy and Sensitive Information
+Meeting requests should be routed to the responsible person.
 
-The AI should not expose private customer information unnecessarily.
+The AI should not automatically confirm or schedule a meeting unless an approved scheduling workflow explicitly authorizes it.
 
-Sensitive or uncertain requests should be escalated to an authorized human.
+Human confirmation should be used when required.
 
-## Email Safety
+---
 
-Promotional emails should be classified as promotional and archived according to the Task 06 workflow.
+## 14. Promotional Email Policy
 
-Spam should be handled as spam.
+Promotional messages should be handled conservatively.
 
-An unusual-looking email should not automatically be deleted simply because it looks unusual.
+If an email is clearly promotional and not relevant to business operations, it may be archived or deleted according to the automation rules.
 
-## Human-in-the-Loop Principle
+The AI should not delete an email when its classification is uncertain.
 
-The AI is an assistant, not a decision maker.
+---
 
-Important business, hiring, meeting, complaint, financial, legal or sensitive decisions require human review.
+## 15. Spam Policy
+
+Clear spam messages may be moved to spam or deleted according to the workflow.
+
+Uncertain messages should not be deleted automatically.
+
+---
+
+## 16. Duplicate Email Policy
+
+The system should use the email message ID or thread ID to prevent duplicate processing.
+
+If the same email is received again, the system should avoid sending duplicate responses or notifications.
+
+---
+
+## 17. Conversation Context Policy
+
+Follow-up emails should be processed using the previous conversation or thread context when available.
+
+The AI should consider:
+
+- Previous messages.
+- Previous answers.
+- Customer questions.
+- Earlier property references.
+- Previous actions.
+
+The AI should not treat a follow-up message as a completely unrelated email when thread context is available.
+
+---
+
+## 18. RAG Grounding Policy
+
+For general questions and sales inquiries:
+
+1. Search the knowledge base.
+2. Retrieve relevant information.
+3. Generate an answer using retrieved information.
+4. Avoid unsupported claims.
+5. If no reliable answer is found, escalate to a human or provide a safe response.
+
+---
+
+## 19. Email Response Policy
+
+Automated responses should be:
+
+- Clear.
+- Professional.
+- Relevant to the customer's question.
+- Concise.
+- Based on retrieved information.
+- Honest about missing information.
+
+The AI should not claim that a human has completed an action unless the workflow confirms that action.
+
+---
+
+## 20. Logging Policy
+
+Every processed email should be logged with:
+
+- Sender
+- Subject
+- Category
+- Priority
+- AI decision
+- Action taken
+- Whether RAG was used
+- Response sent
+- Forwarded-to destination
+- Discord status
+- Timestamp
+- Error or processing status
+
+---
+
+## 21. Human Escalation Principle
+
+When the AI is uncertain, escalation is safer than guessing.
+
+The goal of the system is to automate routine information handling while keeping important, sensitive, uncertain, and decision-based matters with humans.
