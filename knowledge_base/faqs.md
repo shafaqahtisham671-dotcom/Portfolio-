@@ -1,103 +1,270 @@
-# Real Estate Knowledge Base — FAQs
+# Frequently Asked Questions
 
-## General
+This document contains frequently asked questions and answers related to the companies and real-estate services in the Task 5 knowledge base.
 
-### Q: Can the AI provide current property availability?
+The AI Email Triage & RAG Assistant should use these FAQs when answering incoming customer emails.
 
-A: Only if the property information is explicitly available in the current knowledge base. Because listings change frequently, exact current availability should be confirmed by a human representative when uncertain.
+---
 
-### Q: Can the AI provide an exact commission or fee?
+## General Real Estate FAQs
 
-A: Only when the exact fee is explicitly stated in the knowledge base. If the information is unavailable, the request must be routed to a human.
+### Can I ask about buying a property?
 
-### Q: Can the AI schedule a viewing or meeting automatically?
+Yes. Several companies in the knowledge base provide buyer services. Buyer-related questions should be answered using the relevant company information and available property data.
 
-A: No. Meeting and scheduling requests require human handling or approval.
+If the requested property or service information is not available, the email should be routed for human review.
 
-## Stanfles Realty
+### Can I ask about selling a property?
 
-### Q: Does Stanfles Realty charge monthly fees?
+Yes. Several companies provide seller services including property valuation, marketing, listing support, negotiations, and closing support.
 
-A: The Stanfles FAQ states that there are no monthly fees, franchise fees, desk fees or technology fees.
+The exact services and fees depend on the company.
 
-### Q: What is the Stanfles transaction fee?
+### Can I ask about property prices?
 
-A: The Stanfles FAQ states $594 per file under $1 million and 0.1% per file above $1 million, stated as $1,000 per $1 million.
+Yes, if the property price is available in the current property listings knowledge base.
 
-### Q: Does Stanfles provide transaction coordination?
+The AI must not invent or estimate a property price.
 
-A: Yes. Stanfles describes transaction coordination support and also provides escrow, loans and remote online notary services.
+If a current price is not available, the AI should state that the information is not available and route the request for human assistance when necessary.
 
-## Partner Real Estate
+### Can I ask about property availability?
 
-### Q: Is transaction coordination included for Partner Real Estate team agents?
+Yes, but availability can change.
 
-A: Yes. Partner Real Estate states that its full Transaction Coordinator team is included for team agents at no additional cost.
+The AI should only state that a property is available when the knowledge base contains current information supporting that statement.
 
-### Q: What does the Transaction Coordinator handle?
+If availability cannot be confirmed, the customer should be referred to the responsible agent or company.
 
-A: The service can include document uploading, compliance coordination, communication with escrow and vendors, deadline tracking, contract addenda, signatures, file auditing and closing support.
+### Can I ask about property fees?
 
-### Q: Is there a fee for National Network Partner Program transaction coordination?
+Yes.
 
-A: The reviewed Partner Real Estate page states $500 per closing, paid at close of escrow, with no monthly or annual fees.
+The AI should use the documented fee information in the Services & Fees document.
 
-## Zown
+If a fee is not documented, the AI must not guess.
 
-### Q: What is Zown's advertised selling commission?
+### Can I ask about mortgage or financing?
 
-A: Zown advertises full-service home selling at 1% commission, capped at $7,999.
+Some companies provide information or related services, but financing details are not universally documented in this knowledge base.
 
-### Q: What does Zown's full-service selling package include?
+The AI should not provide financial advice or invent financing terms.
 
-A: The website describes professional photography, staging advice, open houses, MLS exposure, pricing and marketing support, negotiation and closing support.
+Requests requiring specific financing information should be routed to a qualified human representative.
 
-### Q: Do I have to sell my home with Zown after consulting with them?
+---
 
-A: Zown's FAQ states that customers are not required to sell their home with Zown.
+# Stanfles Realty FAQs
 
-## REAL New York
+### What is Stanfles Realty's transaction fee?
 
-### Q: Does REAL New York charge for viewing apartments?
+Stanfles Realty lists a fee of $594 per file for transactions under $1 million and 0.1% per file above $1 million.
 
-A: REAL New York states that it does not charge for information provided on its website or for viewing apartments/rental properties through its brokers.
+### Does Stanfles Realty charge monthly fees?
 
-### Q: When is a broker fee charged?
+The company states that it does not charge monthly, franchise, desk, or technology fees.
 
-A: The renter's guide states that clients pay a broker fee if they rent a property through REAL New York, unless the property is a NO FEE apartment.
+### Is E&O insurance included?
 
-### Q: What is the usual broker fee for an unfurnished apartment?
+Stanfles states that E&O is included in all files.
 
-A: REAL New York states that for a 1–2 year lease, the usual fee is 15% of annual rent.
+### Does Stanfles provide transaction coordination?
 
-## Found Realty Houston
+Yes. Stanfles provides transaction coordination services, including a Basic TC option and a Full Service TC option.
 
-### Q: Does Found Realty provide buyer services?
+### Does Stanfles provide notary services?
 
-A: Yes. The website describes assistance in finding homes and guidance throughout the buying process.
+Yes. The company provides Remote Online Notary services.
 
-### Q: Does Found Realty provide seller services?
+### Does Stanfles provide escrow and loan services?
 
-A: Yes. The website describes assistance with marketing and selling homes.
+Yes. The company lists escrow, loans, transaction coordination, and notary as in-house or related services.
 
-### Q: What is Found Realty's commission?
+---
 
-A: The reviewed public source does not provide a verified specific commission. The AI should route this question to a human representative.
+# Partner Real Estate FAQs
 
-## McLay Real Estate
+### Does Partner Real Estate provide transaction coordination?
 
-### Q: Does McLay provide property listings?
+Yes. Partner Real Estate provides a Transaction Coordinator team for its agents.
 
-A: Yes. The website provides residential listings and pre-construction projects, particularly in the Toronto area.
+### How much does transaction coordination cost for Partner team agents?
 
-### Q: Can the AI guarantee that a McLay listing is still available?
+The service is included at $0 cost for Partner Real Estate team agents.
 
-A: No. Current availability must be confirmed from the current listing or by a human representative.
+### What is the National Network Partner Program transaction coordination fee?
 
-## Unknown Questions
+The published fee is $500 per closing, paid at close of escrow.
 
-If a question cannot be answered using the knowledge base, the AI must not invent an answer.
+### Are there monthly or annual fees for the National Network Partner Program TC service?
 
-Recommended safe response:
+The published service states that there are no monthly or annual fees.
 
-"Thanks for reaching out. I don't have enough verified information in our knowledge base to answer that accurately. I've routed your request to our team for confirmation."
+### What does the Transaction Coordinator handle?
+
+The TC team can handle document uploads, compliance coordination, deadlines, signatures, file audits, commission breakdowns, escrow/title communication, and closing support.
+
+---
+
+# Zown FAQs
+
+### What is Zown's seller commission?
+
+Zown publishes full-service home selling at 1% commission, capped at $7,999.
+
+### What services are included when selling through Zown?
+
+The seller service includes consultation, professional home valuation, pre-market preparation, professional photography, staging advice, open houses, MLS exposure, negotiation, and closing support.
+
+### Do I have to sell my home through Zown after a consultation?
+
+No. Zown states that sellers are not required to sell their home with Zown.
+
+### Does Zown provide access to buyers?
+
+Zown states that sellers receive exposure to its network of qualified buyers across Ontario.
+
+### Does Zown provide professional photography?
+
+Yes. Professional photography is included in the seller service described by Zown.
+
+---
+
+# REAL New York FAQs
+
+### Does REAL New York charge for viewing apartments?
+
+REAL New York states that it does not charge for information provided by its website or for viewing apartments through its brokers.
+
+### When does a renter pay a broker fee?
+
+According to REAL New York, clients pay a broker fee if they rent a property through REAL New York, except where the apartment is a no-fee property.
+
+### What is the typical fee for an unfurnished apartment?
+
+REAL New York states that for a 1–2 year lease, the usual broker fee is 15% of annual rent.
+
+### How early should a renter start looking?
+
+REAL New York recommends beginning an apartment search approximately 4–6 weeks before the expected moving date.
+
+### Does REAL New York have no-fee apartments?
+
+Yes. The company states that a sizable amount of its listings are no-fee apartments.
+
+---
+
+# Bizzarro Real Estate Agency FAQs
+
+### Does Bizzarro help buyers?
+
+Yes. Bizzarro provides buyer representation and buyer-agent services.
+
+### Does Bizzarro help sellers?
+
+Yes. Seller options include traditional open-market selling, home evaluation, and instant cash-offer options.
+
+### Does Bizzarro provide property management services?
+
+The company states that its team can assist with buying, selling, investing, and property management needs.
+
+### Does Bizzarro have multiple offices?
+
+Yes. The company lists offices in New York, Brooklyn, Queens, and Westchester.
+
+---
+
+# Found Realty Houston FAQs
+
+### Does Found Realty Houston help buyers?
+
+Yes. The company provides buyer services and guides clients through the home-buying process.
+
+### Does Found Realty Houston help sellers?
+
+Yes. Seller services focus on marketing and selling the property.
+
+### Does Found Realty Houston have property listings?
+
+Yes. The website displays featured property listings.
+
+### Can the AI guarantee that a listed property is still available?
+
+No. Property availability can change. The AI should only confirm availability when current information supports it.
+
+---
+
+# McLay Real Estate FAQs
+
+### Does McLay Real Estate provide property listings?
+
+Yes. The website provides property search and featured listings.
+
+### Does McLay provide pre-construction opportunities?
+
+Yes. The website includes a pre-construction section.
+
+### Can customers search properties by price and type?
+
+Yes. The property search allows users to filter properties using criteria such as home type, bedrooms, bathrooms, sale/rent, and price.
+
+### Can the AI provide a current property price?
+
+Only when the current listing information is available in the knowledge base.
+
+---
+
+# Marketing and Service Companies FAQs
+
+### Can the AI answer questions about marketing services?
+
+Yes, when the requested service is documented in the company knowledge base.
+
+### Can the AI provide a marketing agency's exact pricing?
+
+Only if the price is explicitly documented.
+
+If no price is available, the AI should not create an estimate.
+
+### Can the AI recommend a specific marketing package?
+
+The AI should describe documented services but should not invent packages or prices.
+
+---
+
+# HVAC and Home-Service FAQs
+
+### Can customers ask about HVAC services?
+
+Yes.
+
+Companies in the dataset provide HVAC-related services including repair, installation, maintenance, heating, cooling, and emergency services.
+
+### Can the AI diagnose an HVAC problem?
+
+The AI should not make a technical diagnosis without sufficient documented information.
+
+Technical or urgent problems should be routed to the appropriate service professional.
+
+### Can the AI guarantee same-day service?
+
+No, unless the company's current documented information explicitly confirms availability for the requested situation.
+
+### Can the AI provide emergency-service information?
+
+Yes, when emergency services are documented for the relevant company.
+
+---
+
+# FAQ Safety Rules
+
+1. Never invent an answer.
+2. Never invent a property price.
+3. Never invent a property availability status.
+4. Never invent a company fee.
+5. Never invent a service.
+6. If information is missing, say that the knowledge base does not contain the requested information.
+7. Route important or uncertain questions to a human.
+8. Use the most specific document available.
+9. Preserve the customer's email context.
+10. For urgent issues, follow the urgent-email routing policy.
